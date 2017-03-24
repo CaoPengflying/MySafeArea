@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+<include layout="@layout/activity_base" />
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        
+        >
+        
+        <ImageView 
+            android:id="@+id/Im_back_AtLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/no"  
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        >
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_app"  
+            android:layout_centerInParent="true"
+                      />
+    </RelativeLayout>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="平安小区"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="PINGAN  XIAOQU"
+        />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <EditText 
+          android:id="@+id/et_phone_AtLogin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"   
+	        android:drawableLeft="@drawable/phone"  
+	        android:background="@drawable/edit_shape"  
+	        android:padding="10dp"  
+	        android:hint="手机号"  
+	        android:singleLine="true"  
+            />
+        
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/white"
+        />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <EditText 
+          android:id="@+id/et_password_AtLogin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"   
+        android:drawableLeft="@drawable/password"  
+        android:background="@drawable/edit_shape"  
+        android:padding="10dp"  
+        android:hint="密码"  
+        android:singleLine="true"  
+        android:textColor="#FFFAFA"
+            />
+        
+    </LinearLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+        
+    </RelativeLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:orientation="horizontal"
+	    >
+	    
+	    <TextView 
+	        android:id="@+id/tv_enter_AtLogin"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:text="登录"
+	        android:background="@color/policebule"
+	        android:textColor="@color/white"
+	        />
+	</LinearLayout>    
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="5dp"
+	    android:background="@color/white"/>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:orientation="horizontal"
+	    >
+	    
+	    <TextView 
+	        android:id="@+id/tv_register_AtLogin"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:text="注册"
+	        android:background="@drawable/text_shape"
+	        android:textColor="@color/policebule"
+	        />
+	</LinearLayout>    
+    
+
+</LinearLayout>

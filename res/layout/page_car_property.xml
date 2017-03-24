@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<LinearLayout 
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:orientation="horizontal"
+	    android:padding="6dp">
+	    
+	    <EditText  
+	        android:id="@+id/ed_inputname_pageCarInfo_pro"
+	        style="@style/EditTextStyle"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent"
+	        android:hint="车主名/身份证/车牌号/车架号/发动机型号"/>
+	    <ImageView 
+	        android:id="@+id/im_search_pageCarInfo_pro"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.1"
+	        android:background="@drawable/search1"/>
+	</LinearLayout>
+	<com.handmark.pulltorefresh.library.PullToRefreshListView  
+	    android:id="@+id/lv_inputname_pageCarInfo_pro"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:entries="@array/areaname"/>
+</LinearLayout>

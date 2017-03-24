@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:orientation="horizontal"
+	    android:padding="6dp">
+
+	    <TextView
+	        style="@style/TextContentStyle"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="2.02"
+	        android:gravity="center_vertical"
+	        android:text="房屋用途" />
+
+	    <Spinner
+	        android:id="@+id/sp_inputarea_pagePopuInfo_pro"
+	        android:layout_width="0dp"
+            android:background="@color/bg_Gray_light"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:entries="@array/hourseUseType" />
+
+	</LinearLayout>  
+	<View
+	    android:layout_width="match_parent"
+	    android:layout_height="2dp"
+	    android:background="@color/bg_Gray_light"/> 
+	    <LinearLayout 
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:orientation="horizontal"
+	    android:padding="6dp">
+	    
+	    <EditText  
+	        android:id="@+id/ed_infos_pagePopuInfo_pro"
+	        style="@style/EditTextStyle"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent"
+	        android:hint="房主姓名/身份证"/>
+	    <ImageView 
+	        android:id="@+id/iv_search_pagePopuInfo_pro"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.1"
+	        android:background="@drawable/search1"/>
+	</LinearLayout>
+	<View
+	    android:layout_width="match_parent"
+	    android:layout_height="5dp"
+	    android:background="@color/bg_Gray_light"/>  
+	
+	<com.handmark.pulltorefresh.library.PullToRefreshListView 
+	    android:id="@+id/lv_populationInfo_pagePopuInfo"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:entries="@array/contacts"/>
+	    
+
+</LinearLayout>

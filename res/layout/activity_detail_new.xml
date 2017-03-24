@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+<include layout="@layout/activity_base" />
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="6dp"
+        android:background="@color/policebule" >
+
+        <ImageView
+            android:id="@+id/iv_back_AtDetailNew"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <TextView
+            style="@style/TextTittleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新闻详情" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/bg_Gray_light" />
+     <TextView 
+        android:padding="6dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_title_AtDetailNew"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="@color/red"
+        android:text="1111111111111111111111111"/>
+     <TextView 
+        android:padding="6dp"
+        android:id="@+id/tv_word_AtDetailNew"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""/>
+</LinearLayout>
+    
+    
+    
+    

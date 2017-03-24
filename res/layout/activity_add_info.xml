@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <include layout="@layout/activity_base" />
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/policebule"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/iv_back_AtAddInfo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="信息采集"
+            style="@style/TextTittleStyle"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/iv_select_AtAddInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/search" />
+
+    </RelativeLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/bg_Gray_light"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <TextView 
+            android:id="@+id/tv_populationInfo_AtAddInfo"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="人口信息"/>
+        <TextView 
+            android:id="@+id/tv_carInfo_AtAddInfo"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="车辆信息"/>
+        <TextView 
+            android:id="@+id/tv_shopInfo_AtAddInfo"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="商铺信息"/>
+        
+    </LinearLayout>
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="3dp"
+         android:gravity="center_horizontal"
+         android:orientation="horizontal">
+         <View 
+             android:id="@+id/v1"
+             android:layout_width="70dp"
+             android:layout_marginRight="60dp"
+             android:layout_height="match_parent"
+             android:background="@color/policebule"/>
+         <View 
+             android:id="@+id/v2"
+             android:layout_width="70dp"
+             android:layout_height="match_parent"
+             android:background="@color/white"/>
+         <View 
+             android:id="@+id/v3"
+             android:layout_width="70dp"
+             android:layout_marginLeft="60dp"
+             android:layout_height="match_parent"
+             android:background="@color/white"/>
+     </LinearLayout> 
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/bg_Gray_light"/>
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+    
+	    <GridView 
+            android:id="@+id/gv_areaName_AtAddInfo"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:numColumns="4"/>
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent">
+
+		    <ImageView
+            android:id="@+id/iv_add_AtAddInfo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginBottom="16dp"
+		        android:layout_marginRight="19dp"
+		        android:src="@drawable/addinfo" />
+
+	    </RelativeLayout>
+	    
+    </FrameLayout>
+ </LinearLayout>

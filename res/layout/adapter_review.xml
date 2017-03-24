@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+	    <com.example.saveareaapp.view.yximageview
+        	android:id="@+id/im_head_AdReview"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:src="@drawable/timg_1" />
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView 
+        		android:id="@+id/tv_name_AdReview"
+                android:textSize="15dp"
+                android:layout_marginLeft="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不穿裤子的云"/>
+            <TextView 
+        		android:id="@+id/tv_reviewtime_AdReview"
+                android:textSize="12dp"
+                android:textColor="@color/gray"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-7-8 12:12:12"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+    <TextView 
+        android:id="@+id/tv_reviewword_AdReview"
+        android:layout_marginLeft="7dp"
+        android:textSize="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="少小离家老大回，乡音无改鬓毛衰你是"/>
+
+</LinearLayout>

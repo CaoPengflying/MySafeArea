@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <include layout="@layout/activity_base" />
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/policebule"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/iv_back_AtSendInter"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布互动"
+            style="@style/TextTittleStyle"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:id="@+id/tv_release_AtSendInter" 
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="发布"
+            android:textSize="17sp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/bg_Gray_light"/>
+
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/ll_biaoti"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="标题" />
+
+            <EditText
+                android:id="@+id/et_title_AtSendInter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/white"
+                android:hint="请输入标题"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/ll_biaoti"
+            android:background="@color/bg_Gray_light" />
+
+        
+
+        <EditText
+            android:id="@+id/ed_talk_AtSendInter"
+            android:gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@color/white"
+            android:textSize="18dp"
+            android:hint="说说你的互动" />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <ImageView 
+                android:layout_marginLeft="20dp"
+                android:id="@+id/im_photo1"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/addphoto"/>
+
+            <ImageView
+                android:id="@+id/im_photo2"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/addphoto" />
+
+            <ImageView 
+                android:layout_marginLeft="10dp"
+                android:id="@+id/im_photo3"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/addphoto"/>
+        </LinearLayout>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/bg_Gray_light"/>
+
+  
+    
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <include layout="@layout/activity_base" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/policebule"
+        android:padding="6dp" >
+
+        <ImageView
+            android:id="@+id/iv_back_AtSearchPopuInfo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/TextTittleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="人口信息查询" />
+        <LinearLayout 
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true">
+            <Spinner
+	            android:id="@+id/sp_selectArea_AtSearchPopuInfo"
+                android:layout_marginLeft="20dp"
+	            android:background="@color/policebule"
+            	android:popupBackground="@color/policebule"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:dropDownWidth="100dp"
+	            android:dropDownHorizontalOffset="40dp"
+	            android:spinnerMode="dropdown"
+	            android:entries="@array/areaname"/>
+	
+	        <ImageView
+	            android:layout_width="12dp"
+	            android:layout_height="12dp"
+	            android:src="@drawable/select" />
+            
+        </LinearLayout>
+
+        
+    </RelativeLayout>
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:orientation="horizontal"
+	    android:padding="6dp">
+
+		<TextView
+		    android:layout_width="0dp"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="10dp"
+		    android:layout_weight="2"
+		    android:gravity="center_vertical"
+		    android:text="房屋用途"
+		    android:textSize="17sp" />
+
+	    <Spinner
+	        android:id="@+id/sp_inputarea_AtSearchPopuInfo"
+	        android:layout_width="0dp"
+            android:background="@drawable/bg_edittext"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:entries="@array/hourseUseTypeAll" />
+
+	</LinearLayout>  
+	<View
+	    android:layout_width="match_parent"
+	    android:layout_height="2dp"
+	    android:background="@color/bg_Gray_light"/>  
+	<LinearLayout 
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:orientation="horizontal"
+	    android:padding="6dp">
+	    
+	    <EditText  
+	        android:id="@+id/ed_inputname_AtSearchPopuInfo"
+	        style="@style/EditTextStyle"
+	        android:layout_width="0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent"
+	        android:hint="房主姓名/身份证"/>
+	    <ImageView 
+	        android:id="@+id/im_search_AtSearchPopu"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.1"
+	        android:background="@drawable/search1"/>
+	</LinearLayout>
+	<View
+	    android:layout_width="match_parent"
+	    android:layout_height="5dp"
+	    android:background="@color/bg_Gray_light"/>  
+	
+	<com.handmark.pulltorefresh.library.PullToRefreshListView 
+	    android:id="@+id/lv_populationInfo_AtSearchPopuInfo"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:entries="@array/contacts"
+	    />
+</LinearLayout>
+

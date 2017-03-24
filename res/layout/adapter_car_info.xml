@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+   <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+       <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/carinfo"/>
+       <LinearLayout 
+            android:layout_width="0dp"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:layout_marginLeft="10dp"
+        	android:layout_marginTop="10dp"
+        	android:layout_marginBottom="5dp"
+        	android:orientation="vertical">
+
+           <TextView
+               android:id="@+id/tv_name_AdCarInfo"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="张三"
+               android:textSize="15sp" />
+
+           <LinearLayout 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="3dp"
+               android:orientation="horizontal">
+
+               <TextView
+                   android:id="@+id/tv_colorAndBrand_AdCarInfo"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="白色宝马X5"
+                   android:textColor="@color/comment_Gray"
+                   android:textSize="13sp" />
+
+               <TextView 
+            	android:id="@+id/tv_CarNum_AdPopulationInfo"
+           		android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="8dp"
+            	android:textSize="13sp"
+            	android:textColor="@color/comment_Gray"
+            	android:text="赣G9u980"/>
+           </LinearLayout>
+       </LinearLayout>
+   </LinearLayout>
+
+</LinearLayout>

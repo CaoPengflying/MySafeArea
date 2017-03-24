@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="carType">
+        <item >suv</item>
+        <item >轿车</item>
+        <item >跑车</item>
+        <item >卡车</item>
+        <item >轿跑</item>
+    </string-array>
+    <string-array name="carBrand">
+        <item >大众</item>
+        <item >雪弗兰</item>
+        <item >别克</item>
+        <item >奔驰</item>
+        <item >宝马</item>
+    </string-array>
+    <string-array name="carModel">
+        <item >A6</item>
+        <item >Q7</item>
+        <item >520</item>
+        
+    </string-array>
+    <string-array name="contacts">
+        <item >张三</item>
+        <item >张四</item>
+        <item >张武</item>
+        
+    </string-array>
+    <string-array name="carColor">
+        <item >红色</item>
+        <item >黑色</item>
+        <item >蓝色</item>
+        
+    </string-array>
+    <string-array name="type">
+        <item >个人</item>
+        <item >单位</item>
+        <item >不明</item>
+
+    </string-array>
+    <string-array name="cardType">
+        <item >白牌子</item>
+        <item >黑牌子</item>
+        <item >黄牌子</item>
+
+    </string-array>
+    <string-array name="hourseUseType">
+        <item >自用</item>
+        <item >租赁</item>
+        <item >闲置</item>
+
+    </string-array>
+    <string-array name="hourseUseTypeAll">
+        <item >无</item>
+        <item >自用</item>
+        <item >租赁</item>
+        <item >闲置</item>
+
+    </string-array>
+        <string-array name="hourseUse">
+        <item >居住</item>
+        <item >生产</item>
+        <item >经营</item>
+        <item >办公</item>
+        <item >仓储</item>
+        <item >其他</item>
+
+    </string-array>
+        <string-array name="minzu">
+        <item >汉族</item>
+        <item >壮族</item>
+        <item >满族</item>
+        <item >维吾尔族</item>
+        <item >朝鲜族</item>
+        <item >藏族</item>
+
+    </string-array>
+    <string-array name="areaname">
+        <item >陶洼小区</item>
+        <item >新建小区</item>
+        <item >豪门小区</item>
+        <item >八里湖小区</item>
+        <item >南湖小区</item>
+        <item >智豪小区</item>
+
+    </string-array>
+    <string-array name="guanfanghuifu">
+        <item >官方回复</item>
+        <item >谢谢你的反馈</item>
+        <item >问题已解决</item>
+        <item >我们会继续努力</item>
+
+    </string-array>
+    <string-array name="review">
+        <item >臣复议</item>
+        <item >确实存在问题</item>
+        <item >我来打酱油</item>
+        <item >每天努力一点</item>
+        <item >加油我们会更好</item>
+
+    </string-array>
+</resources>

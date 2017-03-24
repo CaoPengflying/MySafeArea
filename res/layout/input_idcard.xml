@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/tv_noice_inputIdcard"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="bottom"
+        android:text="提示信息"/>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="9"
+                    android:gravity="center_vertical"
+                    android:text="姓名" />
+
+                <EditText
+                    android:id="@+id/et_name_InputIdCard"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="15"
+                    android:background="@color/white"
+                    android:hint="张小山" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="性别" />
+
+                <EditText
+                    android:id="@+id/et_sex_InputIdCard"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:hint="男" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="民族" />
+
+                <EditText
+                    android:id="@+id/et_nation_InputIdCard"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:background="@color/white"
+                    android:hint="汉族" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="出生" />
+
+                <EditText
+                    android:id="@+id/et_birth_InputIdCard"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:hint="2017-8-9" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="住址" />
+
+                <EditText
+                    android:id="@+id/et_address_InputIdCard"
+                    style="@style/EditTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@color/white"
+                    android:hint="江西省九江市庐山区前进东路551号" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="280dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:gravity="center_vertical"
+                android:text="公民身份证号码" />
+
+            <EditText
+                android:id="@+id/et_idnumber_InputIdCard"
+                style="@style/EditTextStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="11"
+                android:background="@color/white"
+                android:hint="362329********8745" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_head_InputIdCard"
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+            android:layout_alignBottom="@+id/linearLayout1"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/linearLayout1"
+            android:layout_toRightOf="@+id/linearLayout1"
+            android:src="@drawable/head1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+            <Button 
+               	android:layout_marginLeft="15dp"
+                android:id="@+id/bt_read_inputIdCard"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="读取"/>
+            <Button 
+                android:layout_marginLeft="15dp"
+                android:id="@+id/bt_save_inputIdCard"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="保存"/>
+            <Button 
+                android:layout_marginLeft="15dp"
+                android:id="@+id/bt_exit_inputIdCard"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="取消"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

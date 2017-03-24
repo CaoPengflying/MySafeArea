@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<View
+	    android:layout_width="match_parent"
+	    android:layout_height="2dp"
+	    android:background="@color/bg_Gray_light"/>  
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+	    android:orientation="horizontal"
+	    android:padding="6dp">
+	    
+	    <EditText  
+	        android:id="@+id/ed_inputname_pageShopInfo_pro"
+	        style="@style/EditTextStyle"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="match_parent"
+	        android:hint="商铺名/地址/联系电话/业主/经营范围"/>
+	    <ImageView 
+	        android:id="@+id/im_search_pageShopInfo_pro"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.1"
+	        android:background="@drawable/search1"/>
+	</LinearLayout>
+	<View
+	    android:layout_width="match_parent"
+	    android:layout_height="5dp"
+	    android:background="@color/bg_Gray_light"/>  
+	
+	<com.handmark.pulltorefresh.library.PullToRefreshListView 
+	    android:id="@+id/lv_shopinfos_pageShopInfo_pro"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:entries="@array/contacts"
+	    />
+</LinearLayout>
